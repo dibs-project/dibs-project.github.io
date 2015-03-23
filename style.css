@@ -1,0 +1,145 @@
+/* ==== Fonts ==== */
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/open-sans-regular.woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/open-sans-italic.woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/open-sans-bold.woff");
+    font-weight: bold;
+}
+
+
+/* ==== General ==== */
+
+a, body, div, h1, h2, html, img, li, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 0.5rem;
+    background-color: hsl(163, 18%, 90%);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 140%;
+}
+
+body {
+    max-width: 1024px;
+    min-height: 750px;
+    padding: 3rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    background-color: #FFF;
+}
+
+h1 {
+	width: 10%;
+	font-weight: normal;
+}
+
+h2 {
+    font-size: 110%;
+    font-weight: bold;
+    color: #628c80;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 90%;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+
+/* ==== Layout ==== */
+
+header pseudoLogo a:link {
+	font-size: 150%;
+    text-decoration: none;
+    float: left;
+}
+
+div#pseudoLogo {
+	width: 15%;
+	font-size: 300%;
+	float: left;
+}
+
+div#pseudoLogo a:link {
+    text-decoration: none;
+}
+
+div#description {
+	width: 85%;
+	border-bottom: 1px solid #628c80;
+	padding-bottom: 0.2rem;
+	text-align: right;
+	float: right;
+}
+
+div.clearLeft {
+    clear: left;
+}
+
+div#nav {
+    margin: 1rem 0 2rem 0;
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    background-color: #628c80;
+}
+
+div#nav > ul > li {
+    margin-left: 0.5rem;
+    float: left;
+}
+
+div#nav > ul > li > a,
+div#nav > ul > li > a:visited,
+div#nav > ul > li > div#current {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem 1rem 2rem 1rem;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+div#nav > ul > li > a:focus,
+div#nav > ul > li > a:hover,
+div#nav > ul > li > a:active,
+div#nav > ul > li > div#current {
+    background: linear-gradient(to bottom, #b3bead 0%,#dfe5d7 40%,#ffffff 100%);
+    background-color: #EFEFEF; /* for older browsers*/
+    color: #628c80;
+}
+
+div#content {
+    -moz-column-count: 2;
+    -moz-column-gap: 3rem;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 3rem;
+    column-count: 2;
+    column-gap: 3rem;
+}
+
+div#content > p,
+div#contentOneColumn > p {
+    font-size: 90%;
+    margin-bottom: 2rem;
+}
